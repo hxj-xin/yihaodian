@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>register</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="./index.html"><img src="./img/logo.png" alt=""></a></div>
+        <div class="box">
+            <p class="f1">您好，欢迎光临1号店！<a href="./login.html">请登录</a></p>
+            <div class="f2"><span><img src="./img/runbun.png" alt=""></span>&nbsp;帮助中心&nbsp;<span><img src="./img/turnb.png" alt=""></span></div>
+        </div>
+    </header>
+    <main>
+        <form action="#">
+            <h2>1号店注册</h2>
+            <input type="tel" class="w1" id="phone" placeholder="手机号码"> <span class="sp"></span><br>
+            <input type="text"  class="w4" placeholder="验证码"><button class="w2" onclick="identify">获取验证码</button> <span class="sp" id="spc"></span><div id="yanzhengma"></div><br>
+            <input type="password" class="w1" id="psw" placeholder="设置密码"> <span class="sp" id="passspan"></span><br>
+            <input type="text" class="w1" id="psw_a" placeholder="确认密码"> <span class="sp" id="passspan1"></span><br>
+            <p>点击注册，表示您同意1号店 <a href="#">《服务协议》</a></p>
+            <input type="submit" class="w3" value="同意协议并注册" onclick="register()">
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">沪ICP备13044278号</a></li>
+            <li></li>
+            <li>合字B1.B2-20130004</li>
+            <li></li>
+            <li><a href="#">营业执照</a></li>
+        </ul>
+        <p>Copyright © 1号店网上超市 2007-2016，All Rights Reserved</p>
+    </footer>
+ 
+</body>
+</html>
+<script src="./js/register.js"></script>
+<script src="./js/cookie.js"></script>
